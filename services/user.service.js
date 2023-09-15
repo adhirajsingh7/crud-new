@@ -19,7 +19,7 @@ const update_User = async function(criteria, projection, options ,Object){
 }
 
 const delete_User = async function(criteria, projection, options){
-    return model.User.findByIdAndDelete(criteria,projection, options)
+    return model.User.deleteOne(criteria,projection, options)
 }
 
 module.exports = {
